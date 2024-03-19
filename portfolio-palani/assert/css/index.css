@@ -19,8 +19,6 @@ body{
     padding: 0;
     height: 40px;
 
-    /* Additional styling for your navbar */
-
 }
 
 .logo a{
@@ -82,7 +80,7 @@ body{
 {
     width: 100%;
     display: flex;
-    background-image: url(/assert/image/back.jpg);
+    background-image: url(./back/back.jpg);
     height: 926px;
     background-size: cover;
     background-repeat: no-repeat;
