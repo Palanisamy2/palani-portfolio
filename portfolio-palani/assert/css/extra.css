@@ -1,0 +1,144 @@
+body{
+    background-color: #4d54da;
+}
+#nav
+{
+    position: fixed;
+    width: 100%;
+    margin: 0px;
+    opacity: 80%;
+}
+.navbar {
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #ffffff;
+    margin: 0;
+    padding: 0;
+    height: 40px;
+
+    /* Additional styling for your navbar */
+
+}
+
+.logo a{
+    margin-left: 100px;
+    font-family: raleway;
+    font-weight: bold;
+    font-size: 35px;
+    color: deeppink;
+}
+
+.nav-links {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+
+}
+.navbar a{
+    text-decoration: none;
+    display: block;
+    position: relative;
+    
+}
+
+.nav-links li
+{
+    margin-right: 50px;
+    text-decoration: none;
+    list-style: none;
+    position: relative;
+    font-family: poppins;
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.navbar li a::after
+{
+    content: '';
+    position: absolute;
+    display: block;
+    height: 0.2em;
+    width: 0%;
+    background-color: deeppink;
+    bottom: -0.4em;
+    transition: all  ease-in-out 400ms;
+
+}
+
+.navbar li a:hover::after
+{
+    width: 100%;
+
+}
+.navbar li a:hover
+{
+    color: deeppink;
+    transition: all  ease-in-out 400ms;
+}
+.container
+{
+    display: flex;
+    flex-wrap: wrap;
+}
+.container h1
+{
+    color: deeppink;
+    font-family: Century751 SeBd BT;
+}
+.achievement p
+{
+    margin-left: 5%;
+    width: 50%;
+    font-family: Century751 SeBd BT;
+    display: flex;
+    color: #ffffff;
+}
+.internship
+{
+    margin-left: 5%;
+    width: 45%;
+    font-family: Century751 SeBd BT;
+    color: #ffffff;
+}
+.achievement
+{
+    width: 50%;
+}
+.activity
+{
+    font-family: Century751 SeBd BT;
+    color: #ffffff;
+}
+@media screen and (max-width:426px) {
+    .navbar
+    {
+     justify-content: space-around;
+     height: 25px;
+    }
+     .logo a 
+     {
+         font-size: 12px;
+     }
+     .nav-links a
+     {
+         font-size: 8px;
+     }
+     .container h1
+{
+    font-size: 20px;
+}
+.achievement p
+{
+    font-size: 10px;
+}
+.internship
+{
+    font-size: 10px;
+}
+.activity
+{
+    font-size: 10px;
+}
+    }  
