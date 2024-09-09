@@ -270,7 +270,7 @@ body {
     font-family:Raleway-Black;
     font-weight: bold;
     font-size: 20px;
-    box-shadow: 8px 8px;
+            box-shadow: 7px 8px 9px rgb(0, 0, 0);
     border: none;
 }
 
@@ -282,7 +282,7 @@ body {
     font-family:Raleway-Black;
     font-weight: bold;
     font-size: 20px;
-    box-shadow: 8px 8px;
+            box-shadow: 7px 8px 9px rgb(0, 0, 0);
     border: none;
 }
 
@@ -294,7 +294,7 @@ body {
     font-family:Raleway-Black;
     font-weight: bold;
     font-size: 20px;
-    box-shadow: 8px 8px;
+            box-shadow: 7px 8px 9px rgb(0, 0, 0);
     border: none;
 }
 
@@ -306,7 +306,7 @@ body {
     font-family:Raleway-Black;
     font-weight: bold;
     font-size: 20px;
-    box-shadow: 8px 8px;
+            box-shadow: 7px 8px 9px rgb(0, 0, 0);
     border: none;
 }
 
@@ -427,20 +427,15 @@ body {
     border: 2px solid black;
 }
 
-.form h2 {
-    margin-bottom: 0px;
-    margin-top: 50%;
-}
-
 .form {
     width: 100%;
-    height: 70%;
+    height: fit-content;
 }
 
 .contact-div h2 {
     color: deeppink;
     text-align: center;
-    margin-top: 0px;
+    margin-top: 20px;
     font-size: 48px;
 }
 
@@ -467,7 +462,7 @@ form .mobile-number {
 
 .mobile-number-input {
     width: 65%;
-    margin-left: 15px;
+    margin-left: 28px;
     height: 30px;
     background-color: #f2f2f2;
     border: none;
@@ -499,7 +494,7 @@ form .describe {
 .describe-input {
     width: 65%;
     margin-left: 105px;
-    height: 50px;
+    height: 70px;
     background-color: #f2f2f2;
     border: none;
     border-radius: 10px;
