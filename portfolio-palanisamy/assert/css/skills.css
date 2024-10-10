@@ -1,0 +1,257 @@
+html {
+
+	scroll-behavior: smooth;
+}
+
+
+body{
+    background-color :#8C9EFF;
+}
+
+#nav {
+    position: fixed;
+    width: 100%;
+    margin: 0px;
+    opacity: 80%;
+}
+.navbar {
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #ffffff;
+    margin: 0;
+    padding: 0;
+    height: 40px;
+
+}
+.logo
+{
+    margin-left: 6%;
+}
+.logo a{
+    font-family: raleway;
+    font-weight: bold;
+    font-size: 35px;
+    color: deeppink;
+}
+
+.nav-links {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+
+}
+.navbar a{
+    text-decoration: none;
+    display: block;
+    position: relative;
+    
+}
+
+.nav-links li
+{
+    margin-right: 40%;
+    text-decoration: none;
+    list-style: none;
+    position: relative;
+    font-family: poppins;
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.navbar li a::after
+{
+    content: '';
+    position: absolute;
+    display: block;
+    height: 0.2em;
+    width: 0%;
+    background-color: deeppink;
+    bottom: -0.4em;
+    transition: all  ease-in-out 400ms;
+
+}
+
+.navbar li a:hover::after
+{
+    width: 100%;
+
+}
+
+.navbar li a:hover {
+    color: deeppink;
+    transition: all  ease-in-out 400ms;
+}
+
+.skills {
+    display: flex;
+    width: 100%;
+    justify-content: space-evenly;
+    font-family: Century751 SeBd BT;
+    font-size: 18px;
+    color: black;
+    animation: fadeOut 3s ease-in-out 0.5s 1 ;
+}
+
+@keyframes fadeOut {
+    0% {opacity: 0;}
+    10% {opacity: 5%;}
+    50% {opacity: 70%;}
+    80% {opacity: 90%;}
+    100% {opacity: 100%;}
+}
+
+
+h1, h3 {
+    color: rgb(229, 11, 117);
+}
+.pl-skill
+{
+    width: 20%;
+}
+.pl-skill button{
+    width: 25%;
+    height: 15%;
+    border-radius: 20px;
+    margin-right: 40px;
+    margin-bottom: 40px;
+    box-shadow: 5px 5px 5px black;
+}
+.pl-skill img{
+    width: 90%;
+    height: 90%;
+}
+.wdt-skill
+{
+    width: 20%;
+}
+.wdt-skill button{
+    width: 25%;
+    height: 15%;
+    border-radius: 20px;
+    margin-right: 40px;
+    margin-bottom: 40px;
+    box-shadow: 5px 5px 5px black;
+}
+.wdt-skill img{
+    width: 90%;
+    height: 90%;
+}
+.uiux-skill
+{
+    width: 20%;
+}
+.uiux-skill button{
+    width: 25%;
+    height: 15%;
+    border-radius: 20px;
+    margin-right: 40px;
+    margin-bottom: 40px;
+    box-shadow: 5px 5px 5px black;
+}
+.uiux-skill img{
+    width: 90%;
+    height: 90%;
+}
+.pro-skill
+{
+    width: 20%;
+}
+.pro-skill button{
+    width: 25%;
+    height: 15%;
+    border-radius: 20px;
+    margin-bottom: 40px;
+    box-shadow: 5px 5px 5px black;
+    margin-right: 40px;
+}
+.pro-skill img{
+    width: 90%;
+    height: 90%;
+}
+@media screen and (max-width:770px) {
+    .pl-skill h3,.uiux-skill h3,.wdt-skill h3,.pro-skill h3
+    {
+        font-size: 16px;
+    }
+    .pl-skill ul,.uiux-skill ul,.wdt-skill ul,.pro-skill ul
+    {
+        font-size: 12px;
+    }
+    .pl-skill button,.wdt-skill button,.uiux-skill button,.wdt-skill button,.pro-skill button
+    {
+        width: 25%;
+        height: 10%;
+        border-radius: 10px;
+        margin-right: 20px;
+        margin-bottom: 30px;
+
+    }
+    .pl-skill img .wdt-skill img,.uiux-skill img,.wdt-skill img,.pro-skill img
+    {
+        width: 90%;
+        height: 90%;
+    }
+}
+@media screen and (max-width:426px) {
+    .navbar
+    {
+     justify-content: space-between;
+     height: 25px;
+    }
+     .logo a 
+     {
+         font-size: 12px;
+     }
+     .nav-links a
+     {
+         font-size: 6px;
+     }
+    .pl-skill h3,.uiux-skill h3,.wdt-skill h3,.pro-skill h3
+    {
+        font-size: 10px;
+    }
+    .pl-skill ul,.uiux-skill ul,.wdt-skill ul,.pro-skill ul
+    {
+        font-size: 6px;
+    }
+    .pl-skill button,.wdt-skill button,.uiux-skill button,.wdt-skill button,.pro-skill button
+    {
+        width: 30%;
+        height: 10%;
+        border-radius: 8px;
+        margin-right: 10px;
+        margin-bottom: 30px;
+        box-shadow: 3px 3px 2px black;
+    }
+    .pl-skill img .wdt-skill img,.uiux-skill img,.wdt-skill img,.pro-skill img
+    {
+        width: 90%;
+        height: 90%;
+    }
+}
+@media screen and (max-width:326px) {
+    .pl-skill h3,.uiux-skill h3,.wdt-skill h3,.pro-skill h3
+    {
+        font-size: 8px;
+    }
+    .pl-skill ul,.uiux-skill ul,.wdt-skill ul,.pro-skill ul
+    {
+        font-size: 6px;
+    }
+    .pl-skill button,.wdt-skill button,.uiux-skill button,.wdt-skill button,.pro-skill button
+    {
+        width: 35%;
+        height: 10%;
+        border-radius: 6px;
+        margin-right: 5px;
+        margin-bottom: 30px;
+        box-shadow: 2px 2px 2px black;
+    }
+    .pl-skill img .wdt-skill img,.uiux-skill img,.wdt-skill img,.pro-skill img
+    {
+        width: 100%;
+        height: 100%;
+    }
+}

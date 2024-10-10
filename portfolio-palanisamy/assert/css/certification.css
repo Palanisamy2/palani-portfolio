@@ -1,0 +1,186 @@
+html {
+
+	scroll-behavior: smooth;
+}
+
+body {
+    background-color :#8C9EFF;
+}
+
+#nav
+{
+    position: fixed;
+    width: 100%;
+    margin: 0px;
+    opacity: 80%;
+}
+.navbar {
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #ffffff;
+    margin: 0;
+    padding: 0;
+    height: 40px;
+
+}
+.logo
+{
+    margin-left: 6%;
+}
+.logo a{
+    font-family: raleway;
+    font-weight: bold;
+    font-size: 35px;
+    color: deeppink;
+}
+
+.nav-links {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+
+}
+.navbar a{
+    text-decoration: none;
+    display: block;
+    position: relative;
+    
+}
+
+.nav-links li
+{
+    margin-right: 40%;
+    text-decoration: none;
+    list-style: none;
+    position: relative;
+    font-family: poppins;
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.navbar li a::after
+{
+    content: '';
+    position: absolute;
+    display: block;
+    height: 0.2em;
+    width: 0%;
+    background-color: deeppink;
+    bottom: -0.4em;
+    transition: all  ease-in-out 400ms;
+
+}
+
+.navbar li a:hover::after
+{
+    width: 100%;
+
+}
+.navbar li a:hover
+{
+    color: deeppink;
+    transition: all  ease-in-out 400ms;
+}
+.certification
+{
+    display: flex;
+    flex-wrap: wrap;
+    width: 90%;
+    min-width: 400px;
+    margin-left: 5%;
+    animation: fadeOut 3s ease-in-out 0.5s 1 ;
+}
+
+@keyframes fadeOut {
+    0% {opacity: 0;}
+    10% {opacity: 5%;}
+    50% {opacity: 70%;}
+    80% {opacity: 90%;}
+    100% {opacity: 100%;}
+}
+
+
+.certification h1
+{
+    font-family: Century751 SeBd BT;
+    display: flex;
+    width: 100%;
+    color: rgb(229, 11, 117);
+}
+.certification-header
+{
+    width: 80%;
+    display: flex;
+    color: rgb(229, 11, 117);
+    font-weight: 1000;
+    font-family: Century751 SeBd BT; 
+}
+.certification-header-date
+{
+    width: 20%;
+    display: flex;
+    color: rgb(229, 11, 117);
+    font-family: Century751 SeBd BT; 
+}
+.certification-data
+{
+    font-family: Century751 SeBd BT; 
+    display: flex;
+    width: 90%;
+    margin-left: 5%;
+    margin-right: 5%;
+    text-align: justify;
+    color: black;
+    font-size: 14px;
+}
+@media screen and (max-width:769px) {
+    .certification-header-date
+    {
+        font-size: 10px;
+    }
+    .certification-header
+    {
+        font-size: 14px;
+        width: 70%;
+        margin-right: 2%;
+    }
+    .certification-data
+    {
+        font-size: 10px;
+    }
+}
+@media screen and (max-width:426px) {
+    .navbar
+    {
+     justify-content: space-between;
+     height: 25px;
+    }
+     .logo a 
+     {
+         font-size: 12px;
+     }
+     .nav-links a
+     {
+         font-size: 6px;
+     }
+    h1
+   {
+    font-size: 18px;
+   }
+    .certification-header-date
+    {
+        font-size: 8px;
+    }
+    .certification-header
+    {
+        font-size: 10px;
+        width: 70%;
+        margin-right: 2%;
+    }
+    .certification-data
+    {
+        font-size: 8px;
+    }
+}
